@@ -5,9 +5,10 @@ on:
     branches: [ "mateo-ortiz-lopez-v2", "main" ]
   pull_request:
     branches: [ "mateo-ortiz-lopez-v2", "main" ]
+  workflow_dispatch:
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,4 +24,4 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm test
+        run: npm run test
