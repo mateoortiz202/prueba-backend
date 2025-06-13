@@ -2,9 +2,9 @@ name: Run Tests
 
 on:
   push:
-    branches: [ mateo-ortiz-lopez, main ]
+    branches: [ mateo-ortiz-lopez-v2, main ]
   pull_request:
-    branches: [ mateo-ortiz-lopez, main ]
+    branches: [ mateo-ortiz-lopez-v2, main ]
 
 jobs:
   test:
